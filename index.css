@@ -129,6 +129,7 @@ body {
 }
 .nav-bar-inner-right {
     /*padding: 1em;*/
+    display: flex;
     padding: .5em;
 }
 .nav-profile {
@@ -591,7 +592,6 @@ div > .profile-preview-bottom-con > .no-border {
         flex-wrap: wrap;
     }
     .nav-bar-inner-right {
-        display: flex;
         justify-content: end;
         width: 100%;
         border-top: 1px solid rgba(33, 33, 33, 0.5);
