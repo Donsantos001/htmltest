@@ -188,6 +188,7 @@ body {
     margin-left: 5px;
 }
 .nav-profile-data  > span {
+    font-family: Arial;
     margin-top: -.2em;
 }
 .nav-profile-data-image > img {
@@ -236,6 +237,7 @@ body {
 
 .sidebar{
     /*padding: 0 1em;*/
+    font-family: Helvetica;
 }
 
 .user-panel {
@@ -355,6 +357,7 @@ body {
     height: 100%;
 }
 .profile-preview {
+    font-family: Helvetica;
     width: 25%;
     flex-shrink: 1;
     margin: 0;
@@ -441,6 +444,7 @@ div > .profile-preview-bottom-con > .no-border {
 
 /* Detail */
 .profile-extra {
+    font-family: "Arial";
     width: 70%;
     flex-shrink: 8;
     margin: 10px;
@@ -527,6 +531,7 @@ div > .profile-preview-bottom-con > .no-border {
     justify-content: space-between;
     padding: 0 1em;
     box-shadow: #c6c2c2 0px -1px 4px;
+    font-family: "Lucida Sans Unicode";
 }
 
 
@@ -607,7 +612,7 @@ div > .profile-preview-bottom-con > .no-border {
 
 
 /*425px*/
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     .profile-preview {
         display: flex;
         flex-direction: column;
@@ -630,7 +635,7 @@ div > .profile-preview-bottom-con > .no-border {
 /*425px*/
 
 
-@media (min-width: 600px) {
+@media (min-width: 600.1px) {
     .reduce-wrapper {
         padding-left: 250px;
     }
