@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./index.css" rel="stylesheet" type="text/css">
+
+    <title>Profile</title>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <!-- Navbar -->
+        <nav class="main-navbar">
+            <!-- Left navbar links -->
+            <div class="nav-bar-inner">
+                <div class="top-nav-item">
+                    <a class="text-white pushmenu" id="push-menu" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+
+                    <div class="border-right-parent">
+                        <div class="border-right"></div>
+                    </div>
+
+                    <div class="search">
+                        <label for="search">
+                            <i class="fa fa-search search-icon"></i>
+                            <input type="text" placeholder="Search for patient" id="search">
+                        </label>
+                    </div>
+                </div>
+    
+                <div class="nav-bar-inner-right p-2">
+                    <div class="nav-bar-right-icons">
+                        <div class="fa fa-bell bell-pulse"></div>
+                        <div class="pulse-out not-pulse"></div>
+                    </div>
+
+                    <div class="nav-bar-right-icons">
+                        <div class="fa fa-envelope"></div>
+                    </div>
+
+                    <div class="nav-bar-right-icons">
+                        <div class="fa fa-expand-arrows-alt"></div>
+                    </div>
+
+                    <div class="nav-profile" id="nav-profile">
+                        <div class="nav-profile-data">
+                            <div class="nav-profile-data-image">
+                                <img src="./images/profile.jpg" alt="User">
+                            </div>
+                            <span>Samson Monday</span>
+                            <i class="fa fa-angle-down" id="nav-profile-icon"></i>
+                        </div>
+
+                        <div class="nav-profile-opt-hide nav-profile-opt-vnot nav-profile-opt" id="nav-profile-data">
+                            <div class="npo-data">
+                                <div class="fa fa-user-circle npo-data-inner-icon"></div>
+                                <div class="npo-data-inner">
+                                    <p>Profile</p>
+                                    <p>Update and Manage</p>
+                                </div>
+                            </div>
+                            <div class="npo-data">
+                                <div class="fa fa-check-circle npo-data-inner-icon"></div>
+                                <div class="npo-data-inner">
+                                    <p>Help & Support</p>
+                                    <p>Contact & FAQ</p>
+                                </div>
+                            </div>
+                            <div class="npo-data">
+                                <div class="fa fa-exclamation-triangle npo-data-inner-icon"></div>
+                                <div class="npo-data-inner">
+                                    <p>Complaints</p>
+                                    <p>Report Error</p>
+                                </div>
+                            </div>
+                            <div class="npo-logout">
+                                <i class="fa fa-power-off"></i>
+                                <span>Logout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </nav>
+        <!-- navbar -->
+
+
+
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar close-sidebar" style="position: fixed; min-height: 100vh; overflow-y: auto">
+            <!-- Sidebar -->
+            <div class="sidebar">
+
+                <!-- Sidebar App panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="user-panel-img">
+                        <img src="./images/start.jpg"
+                            style="max-width: max-content"
+                            id="userdp"  class="img-circle elevation-2" alt="App Image">
+                    </div>
+
+                    <div class="user-panel-info">
+                        <a href="#" class="d-block app-title">Clinique Plus</a>
+                    </div>
+                </div>
+
+
+                <!-- Sidebar Menu -->
+                <nav class="">
+                    <ul class="nav-sidebar flex-column">
+                        <li class="nav-sidebar-item">
+                            <a href="#" class="nav-sidebar-link">
+                                <div class="nav-sidebar-left bed-status">
+                                    <i class="nav-sidebar-icon fas fa-tachometer-alt"></i>
+                                    <span class="nav-sidebar-detail">
+                                        Bed Status
+                                    </span>
+                                </div>
+                                <div class="bed-status-icon">
+                                    <i class="nav-sidebar-right fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <div class="nav-sidebar-left">
+                                    <i class="nav-icon fas fa-briefcase"></i>
+                                    <span class="nav-sidebar-detail">
+                                        Front Office
+                                    </span>
+                                </div>
+                                
+                                <i class="nav-sidebar-right fas fa-angle-right"></i>
+                            </a>
+
+                            <ul class="inner-nav-con nav-treeview">
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <div class="nav-sidebar-left">
+                                    <i class="nav-icon fas fa-stethoscope"></i>
+                                    <span class="nav-sidebar-detail">
+                                        HIS
+                                    </span>
+                                </div>
+                                
+                                <i class="nav-sidebar-right fas fa-angle-right"></i>
+                            </a>
+
+                            <ul class="inner-nav-con nav-treeview">
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <div class="nav-sidebar-left">
+                                    <i class="nav-icon fas fa-tint"></i>
+                                    <span class="nav-sidebar-detail">
+                                        Blood Bank
+                                    </span>
+                                </div>
+                                
+                                <i class="nav-sidebar-right fas fa-angle-right"></i>
+                            </a>
+
+                            <ul class="inner-nav-con nav-treeview">
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <div class="nav-sidebar-left">
+                                    <i class="nav-icon fas fa-globe"></i>
+                                    <span class="nav-sidebar-detail">
+                                        LIS
+                                    </span>
+                                </div>
+                                
+                                <i class="nav-sidebar-right fas fa-angle-right"></i>
+                            </a>
+
+                            <ul class="inner-nav-con nav-treeview">
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <div class="nav-sidebar-left">
+                                    <i class="nav-icon fas fa-chart-line"></i>
+                                    <span class="nav-sidebar-detail">
+                                        RIS
+                                    </span>
+                                </div>
+                                
+                                <i class="nav-sidebar-right fas fa-angle-right"></i>
+                            </a>
+
+                            <ul class="inner-nav-con nav-treeview">
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item menu-open">
+                            <a href="#" class="nav-link">
+                                <div class="nav-sidebar-left">
+                                    <i class="nav-icon fas fa-heart"></i>
+                                    <span class="nav-sidebar-detail">
+                                        Insurance
+                                    </span>
+                                </div>
+                                
+                                <i class="nav-sidebar-right fas fa-angle-right"></i>
+                            </a>
+
+                            <ul class="inner-nav-con nav-treeview">
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Active</p>
+                                    </a>
+                                </li>
+                                <li class="inner-nav-item">
+                                    <a href="#" class="inner-nav-link">
+                                        <p>Inactive</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="profile-main-con">
+                    <div class="profile-preview">
+                        <div class="profile-preview-top">
+                            <div class="profile-preview-top-inner">
+                                <div class="profile-image-con">
+                                    <div class="profile-image-inner">
+                                        <img src="./images/profile.jpg" alt="">
+                                    </div>
+
+                                    <p class="profile-image-name">Isaac Isaac</p>
+                                </div>
+                            </div>
+
+                            <div class="pptborder"></div>
+                        </div>
+
+
+                        <div class="profile-preview-bottom-con">
+                            <div class="profile-preview-data no-border">
+                                <div class="profile-change-pass">
+                                    <div class="change-password">
+                                        Change Password
+                                    </div>
+                                    <div class="password-edit">
+                                        Edit
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-preview-data">
+                                <p>Staff ID</p>
+                                <p>staff001w22</p>
+                            </div>
+
+                            <div class="profile-preview-data">
+                                <p>Role</p>
+                                <p>Admin</p>
+                            </div>
+
+                            <div class="profile-preview-data">
+                                <p>Designation</p>
+                                <p>CMD</p>
+                            </div>
+
+                            <div class="profile-preview-data">
+                                <p>Department</p>
+                                <p>4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-extra">
+                        <div class="profile-extra-top-bar">
+                            HR/Staff Profile
+                        </div>
+
+                        <div class="profile-extra-nav-bar">
+                            <div class="pe-data current-profile-nav-main">
+                                <p>Profile</p>
+                                <div class="current-profile-nav"></div>
+                            </div>
+                            <div class="pe-data">
+                                <p>PayRole</p>
+                            </div>
+                            <div class="pe-data">
+                                <p>Leaves</p>
+                            </div>
+                            <div class="pe-data">
+                                <p>Attendance</p>
+                            </div>
+                            <div class="pe-data">
+                                <p>Documents</p>
+                            </div>
+                            <div class="pe-data">
+                                <p>Timeline</p>
+                            </div>
+                        </div>
+
+                        <div class="profile-extra-data">
+                            <div class="ped-data">
+                                <p>Phone</p>
+                                <p>99342839234</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Emergency Contact</p>
+                                <p>99342839234</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Email</p>
+                                <p>hdhashdajhd@gmail.com</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Date Of Birth</p>
+                                <p>2021-07-26</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Specialty</p>
+                                <p>1</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Father Name</p>
+                                <p>Edwin Issac</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Phone</p>
+                                <p>99342839234</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Mother Maiden Name</p>
+                                <p>Loveth Ndukuba</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>highest Qualification</p>
+                                <p>B.Eng</p>
+                            </div>
+
+                            <div class="ped-data">
+                                <p>Qualification Date</p>
+                                <p>2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.content -->
+
+        </div>
+        <!-- /.content-wrapper -->
+        
+
+
+    </div>
+
+    <footer>
+        <div class="footer-con">
+            <div>
+                <p>CliniquePlus EMR by Netwalkers NG(c) 2021. All right reserved</p>
+            </div>
+
+            <div>
+                <p>
+                    <span>About Us</span>
+                    |
+                    <span>Contact Us</span>
+                    |
+                    <span>Term or Service</span>
+                    |
+                    <span>Privacy Policy</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
