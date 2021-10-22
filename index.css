@@ -592,9 +592,12 @@ div > .profile-preview-bottom-con > .no-border {
         flex-wrap: wrap;
     }
     .nav-bar-inner-right {
-        margin-left: auto;
-        width: fit-content;
+        justify-content: end;
+        width: 100%;
         border-top: 1px solid rgba(33, 33, 33, 0.5);
+    }
+    .first-icon {
+        margin-left: auto;
     }
 }
 
