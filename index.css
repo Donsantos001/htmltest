@@ -592,7 +592,7 @@ div > .profile-preview-bottom-con > .no-border {
     }
     .nav-bar-inner-right {
         display: flex;
-        justify-content: right;
+        justify-content: end;
         width: 100%;
         border-top: 1px solid rgba(33, 33, 33, 0.5);
     }
